@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Button To Show Image Js</title>
+    <!-- Internel Css below -->
+    <style>
+    
+        #fullArea {
+            width: 300px;
+            height: 150px;
+            background: #e1d5d5;
+            display: grid;
+            place-items: center;
+            margin: 0 auto;
+        }
+
+        .buttonOne {
+            padding: 8px;
+            border: none;
+            text-align: center;
+            text-transform: uppercase;
+            color: black;
+            border-radius: 5px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .buttonOne:hover{
+            background: purple;
+            color: white;
+            transition: .3s;
+        }
+        .buttonTwo {
+            padding: 8px;
+            border: none;
+            text-align: center;
+            text-transform: uppercase;
+            color: black;
+            border-radius: 5px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .buttonTwo:hover{
+            background: purple;
+            color: white;
+            transition: .3s;
+        }
+
+        #showImg {
+            width: 300px;
+            position: relative;
+            left: 36.8%;
+            top: 10px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div id="fullArea">
+        <button onclick="clientOne()"class="buttonOne">Client One</button>
+        <button onclick="clientTwo()" class="buttonTwo">Client Two</button>
+    </div>
+    <img id="showImg" src="" alt=""/>
+
+    <!-- JavaScript Link Below -->
+    <script src="mainFunc.js" type="text/javascript"></script>
+</body>
+</html>
+
